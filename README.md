@@ -1,6 +1,6 @@
 # 🎮 Interactive Platformer Resume
 
-![Platformer Resume Game](https://resume-quest.netlify.app)  
+![Platformer Resume Game](https://drive.google.com/file/d/1QuIja6kRA3PKSgN3MmNKQPo_G4yJxUDI/view?usp=sharing)  
 *A visually stunning platformer game that doubles as an interactive resume!*
 
 ---
