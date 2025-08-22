@@ -1,0 +1,309 @@
+/* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 16px;
+  box-sizing: border-box;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  padding: 0;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  animation: modal-appear 0.3s ease-out;
+}
+
+@keyframes modal-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  flex-grow: 1;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Close Button */
+.modal-close-btn {
+  margin: 0;
+  padding: 14px;
+  background: #61DBFB;
+  color: #000;
+  border: none;
+  border-top: 1px solid #eee;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.modal-close-btn:hover {
+  background: #4fc3e3;
+}
+
+.modal-close-btn:active {
+  background: #3daac9;
+}
+
+/* Mobile Controls */
+.mobile-controls {
+  position: fixed;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 1000;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 300px;
+  justify-content: space-between;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.8rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+.btn:active {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0.95);
+}
+
+/* Canvas */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Skills Tracker (Top-Right) */
+.skills-tracker {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 12px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #444;
+  z-index: 100;
+  max-width: calc(100% - 40px);
+  transition: all 0.3s ease;
+}
+
+.progress {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-family: 'Courier New', monospace;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24px, 1fr));
+  gap: 8px;
+}
+
+.skill-orb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+.skill-orb.collected {
+  opacity: 1;
+  box-shadow: 0 0 10px currentColor;
+}
+
+/* Info Popup */
+.skill-info {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  max-width: 80%;
+  border-left: 4px solid var(--orb-color, #61DBFB);
+  animation: fadeIn 0.3s;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.skill-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--orb-color, #61DBFB);
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateX(-50%) translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(-50%) translateY(0); 
+  }
+}
+
+/* Level Tracker */
+.level-tracker {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.7);
+  padding: 8px 12px;
+  border-radius: 8px;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  max-width: calc(100% - 40px);
+}
+
+.level-bar {
+  height: 4px;
+  background: #333;
+  margin-bottom: 6px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.level-bar div {
+  height: 100%;
+  transition: width 0.5s ease-out;
+  border-radius: 2px;
+}
+
+.level-title {
+  font-family: 'Courier New', monospace;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-content {
+    max-height: 85vh;
+    border-radius: 10px;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .skills-tracker {
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+  }
+  
+  .level-tracker {
+    top: 10px;
+    left: 10px;
+    padding: 6px 10px;
+  }
+  
+  .skill-info {
+    bottom: 80px; /* Above mobile controls */
+    max-width: 90%;
+  }
+  
+  .mobile-controls {
+    bottom: 1vh;
+  }
+  
+  .btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-body {
+    padding: 16px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    gap: 6px;
+  }
+  
+  .skill-orb {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .progress, .level-title {
+    font-size: 12px;
+  }
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}

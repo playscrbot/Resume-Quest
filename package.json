@@ -1,0 +1,30 @@
+{
+    "name": "resume-platformer",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "A Resume that's actually a platformer",
+    "scripts": {
+        "start": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "keywords": [],
+    "author": "turbo",
+    "license": "ISC",
+    "devDependencies": {
+        "@react-three/drei": "^9.114.0",
+        "@react-three/fiber": "^8.17.10",
+        "@types/react": "^18.2.37",
+        "@types/react-dom": "^18.2.15",
+        "@vitejs/plugin-react": "^4.2.0",
+        "axios": "^1.7.7",
+        "concurrently": "^8.2.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.2.0",
+        "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "howler": "^2.2.4",
+        "yarn": "^1.22.22"
+    }
+}
