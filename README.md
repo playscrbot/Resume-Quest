@@ -101,9 +101,14 @@ git clone <your-repo>
 
 # Install dependencies
 npm install
+yarn install
+
+# Remove package-lock json
+❌ package-lock.json
+✅ yarn lock
 
 # Start development server
-npm start
+yarn start
 ```
 
 ---
