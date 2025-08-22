@@ -11,7 +11,6 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #0a0818 0%, #1a1638 50%, #2d2678 100%);
-  font-family: 'Press Start 2P', cursive;
   position: relative;
   overflow: hidden;
   padding: 20px;
@@ -25,6 +24,7 @@
   width: 100%;
   max-width: 1000px;
   height: 90vh;
+  font-family: 'Press Start 2P', cursive;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
