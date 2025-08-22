@@ -367,7 +367,7 @@ export const ORBS = [
     content: 'Deep learning, reinforcement learning, and natural language processing' }
 ];
 
-// Signposts (Edit the sentences here, according to your profile)
+// Signposts (Edit the sentences here, according to your career journey)
 export const SIGNS = [
     { x: 150, y: GROUND_Y - 50, width: 100, height: 60, label: 'About Me', 
         content: 
