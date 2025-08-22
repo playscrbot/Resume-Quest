@@ -1,6 +1,6 @@
 # 🎮 Interactive Platformer Resume
 
-![Platformer Resume Game](https://drive.google.com/file/d/1QuIja6kRA3PKSgN3MmNKQPo_G4yJxUDI/view?usp=sharing)  
+![Platformer Resume Game](public/assets/banner.png) 
 *A visually stunning platformer game that doubles as an interactive resume!*
 
 ---
