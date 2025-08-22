@@ -20,20 +20,6 @@ export const MOUNTAINS = [
   { x: 3500, y: GROUND_Y - 500, width: 4000, height: 750 },
 ];
 
-// Tech Skill Orbs
-export const ORBS = [
-  { x: 750, y: 150, color: '#61DAFB', label: 'React', 
-    content: 'Built 5+ React apps with hooks, context, and custom libraries' },
-  { x: 17600, y: GROUND_Y - 50, color: '#539E43', label: 'Mathematics',
-    content: 'Foundational knowledge of linear algebra, calculus, and discrete math' },
-  { x: 9200, y: GROUND_Y + 50, color: '#fb0f0fff', label: 'Computer Science', 
-    content: 'Proficient in data structures, algorithms, and design patterns' },
-  { x: 4150, y: GROUND_Y - 200, color: '#c6c631ff', label: 'Game dev', 
-    content: 'ES6 expert: closures, promises, generators, and performance patterns' },
-  { x: 14500, y: GROUND_Y - 350, color: '#764ABC', label: 'Machine Learning', 
-    content: 'Deep learning, reinforcement learning, and natural language processing' }
-];
-
 export const PLATFORMS = [
   // Ground
   { x: 0, y: GROUND_Y, width: WORLD_WIDTH, height: 40, color: '#4a3728', type: 'ground' },
@@ -367,6 +353,21 @@ export const RIVERS = [
   }
 ];
 
+// Tech Skill Orbs (Edit here with the skills you know alongside some nice description)
+export const ORBS = [
+  { x: 750, y: 150, color: '#61DAFB', label: 'React', 
+    content: 'Built 5+ React apps with hooks, context, and custom libraries' },
+  { x: 17600, y: GROUND_Y - 50, color: '#539E43', label: 'Mathematics',
+    content: 'Foundational knowledge of linear algebra, calculus, and discrete math' },
+  { x: 9200, y: GROUND_Y + 50, color: '#fb0f0fff', label: 'Computer Science', 
+    content: 'Proficient in data structures, algorithms, and design patterns' },
+  { x: 4150, y: GROUND_Y - 200, color: '#c6c631ff', label: 'Game dev', 
+    content: 'ES6 expert: closures, promises, generators, and performance patterns' },
+  { x: 14500, y: GROUND_Y - 350, color: '#764ABC', label: 'Machine Learning', 
+    content: 'Deep learning, reinforcement learning, and natural language processing' }
+];
+
+// Signposts (Edit the sentences here, according to your profile)
 export const SIGNS = [
     { x: 150, y: GROUND_Y - 50, width: 100, height: 60, label: 'About Me', 
         content: 
