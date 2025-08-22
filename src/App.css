@@ -539,6 +539,7 @@
   .hero-subtitle { font-size: 10px; }
   .epic-pixel-button { padding: 14px 28px; font-size: 12px; }
   .pixel-scene { display: none; } /* Simplify on very small screens */
+  .footer-text { display: none; }
 }
 
 /* Modal */
