@@ -1,8 +1,6 @@
-# 🎮 Interactive Platformer Resume
+# Resume Quest: A Hero Awaits 🦸
 
-![Platformer Resume Game](public/assets/banner.png) 
-
-What is this? *A visually stunning platformer game that doubles as an interactive resume!*
+![Platformer Resume Game](public/assets/banner.png)
 
 Think of it like Super Mario meets LinkedIn - you jump around collecting "skill orbs" while discovering what I can do.
 
