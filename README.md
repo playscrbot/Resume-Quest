@@ -94,7 +94,9 @@ Complete your adventure in:
 
 ## 🏆 The Unfair Advantage
  
-This game is designed to be stress-free. Imagine a world where you're a god. That is how it is:
+This game is designed to be stress-free. 
+
+Imagine a world where you're a god. That is how it is:
 
 ✅ No time limits
 ✅ No enemies to fight
