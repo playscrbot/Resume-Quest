@@ -28,6 +28,25 @@ Think of it like Super Mario meets LinkedIn - you jump around collecting "skill 
 
 ---
 
+## 💡 Why This Is Different From Regular Resumes
+| Traditional Resume	   | This Game Resume              |
+|--------------------------|-------------------------------|
+| 📄 Paper or PDF	      | 🎮 Interactive experience     |
+| ❌ Boring to read	     | ✅ Fun to explore             |
+| 🔍 Hard to stand out	  | 🌟 Memorable and unique       |
+| 📏 One-size-fits-all	  | 🎯 Personalized journey       |
+
+---
+
+## 🕐 How Long Does It Take?
+
+Complete your adventure in:
+- ⏱️ **5-10 minutes** if you want to quickly see everything
+- 🕑 **15-20 minutes** if you want to explore thoroughly
+- ⏳ Or take as long as you want - **no rush!**
+
+---
+
 ## ✨ Features
 - 🎯 **Skill Collection System** – Skill Orbs to reveal professional skills and achievements
 - 🏆 **Progressive Unlocks** – Background evolves as you collect more skills  
@@ -70,6 +89,18 @@ Think of it like Super Mario meets LinkedIn - you jump around collecting "skill 
 - Throttled **audio playback**  
 - **Efficient rendering** – only redraw when needed  
 - **Region-based drawing** – render only what’s visible  
+
+---
+
+## 🏆 The Unfair Advantage
+ 
+This game is designed to be stress-free. Imagine a world where you're a god. That is how it is:
+
+✅ No time limits
+✅ No enemies to fight
+✅ No game over screens
+✅ Truly Infinite lives
+✅ Play at your own pace
 
 ---
 
@@ -121,21 +152,6 @@ yarn start
 - **Wall Jumping** – Extra mobility  
 - **Dynamic Difficulty** – Environment evolves with progress  
 - **Interactive Elements** – Conveyor belts, elevators, moving platforms  
-
----
-
-## 🎵 Audio
-- Region-based **background music**  
-- SFX for **jumps, landings, interactions**  
-- Throttled playback to prevent **audio spam**  
-
----
-
-## 📱 Mobile Optimization
-- Touch-friendly controls  
-- Performance-optimized for mobile devices  
-- Haptic feedback on jump  
-- Responsive design for all screen sizes  
 
 ---
 
