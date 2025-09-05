@@ -433,16 +433,23 @@ function GameCanvas() {
 
       // === Update camera position (center on player with some lookahead) ===
       const isLandscape = window.innerWidth > window.innerHeight;
+      const screenH = window.innerHeight;
       const horizontalLookahead = p.facing === 'right' ? 100 : -100;
 
       // Vertical offset adapts to orientation
       let verticalOffset;
       if (isLandscape) {
-        // In landscape → less lift, keep player closer to true center
-        verticalOffset = window.innerHeight * 0.15; // ~15% of screen height
+        // In landscape → less lift, keep player closer to true center (~15% of screen height)
+        if (screenH < 500) {
+          // Small-height landscape devices (Nexus 5, Galaxy S3, etc.)
+          verticalOffset = screenH * 0.1; // keep almost centered
+        } else {
+          // Normal landscape → mild lift
+          verticalOffset = screenH * 0.15;
+        }
       } else {
         // In portrait → more lift, so player isn't at bottom
-        verticalOffset = window.innerHeight * 0.25; // ~25% of screen height
+        verticalOffset = screenH * 0.25; // ~25% of screen height
       }
       
       const targetX = p.x - window.innerWidth / 2 + horizontalLookahead;
