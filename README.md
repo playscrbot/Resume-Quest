@@ -2,7 +2,7 @@
 
 ![Platformer Resume Game](public/assets/banner.png)
 
-Think of it like Super Mario meets LinkedIn - you jump around collecting "skill orbs" while discovering what I can do.
+Think of it like Super Mario meets LinkedIn - you jump around collecting "skill orbs" while discovering what I can do. 
 
 ---
 
@@ -12,6 +12,19 @@ Think of it like Super Mario meets LinkedIn - you jump around collecting "skill 
 - **Collect the skill orbs** - to unlock my skills
 - **Read signposts** - to learn more about my experience
 - **Find the treasure chest** - at the end to see my full resume
+
+---
+
+## 🎯 How to Play
+
+### On Desktop:
+- `← →` / `A D` – Move left/right  
+- `Space` / `↑` – Jump (with **wall jump**)  
+- Jump near signs – Interact with **information points**  
+
+### On Mobile:
+- On-screen arrows – Move and jump  
+- **Haptic feedback** on jump
 
 ---
 
@@ -47,26 +60,13 @@ Complete your adventure in:
 
 ---
 
-## ✨ Features
+## ✨ The Features It has
 - 🎯 **Skill Collection System** – Skill Orbs to reveal professional skills and achievements
 - 🏆 **Progressive Unlocks** – Background evolves as you collect more skills  
 - 🎨 **Pixel-Perfect Visuals** – Hand-coded environments with animated elements  
 - 🎵 **Immersive Audio** – Region-based background music + sound effects  
 - 📱 **Mobile Friendly** – Touch controls with vibration feedback
 - 💼 **Resume Integration** – The Ultimate **pdf document**
-
----
-
-## 🎯 How to Play
-
-### On Desktop:
-- `← →` / `A D` – Move left/right  
-- `Space` / `↑` – Jump (with **wall jump**)  
-- Jump near signs – Interact with **information points**  
-
-### On Mobile:
-- On-screen arrows – Move and jump  
-- **Haptic feedback** on jump  
 
 ---
 
@@ -164,11 +164,10 @@ This isn't a hardcore game - it's a friendly, welcoming experience designed to:
 - Introduce you to my skills in a fun way
 - Be accessible to everyone regardless of gaming experience
 - Provide a memorable alternative to traditional resumes
-- Show my creativity and technical skills in action
 
 ---
 
-Crafted with ❤️ using React and JavaScript..
+Crafted with ❤️ using React..
 This interactive resume showcases both technical skills and creative design in a fun, engaging format!
 
 === ⭐ Star this repo if you enjoyed the game! ⭐ ===
